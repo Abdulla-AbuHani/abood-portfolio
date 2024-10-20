@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html >
+<head>
+<link rel="stylesheet" href="tas-style.css">
+    <title>Travel Time !!</title>
+</head>
+<body>
+    <video autoplay loop muted> 
+        <source src="2palesetine.mp4" type="video/mp4">
+    </video>
+    <main>
+   <div id="contaner-div"> 
+    <form id="Travel-time">
+<h1>Prepare Your Next Trip With Me! </h1>
+<p> please take a moment to get in touch. </p>
+
+<label>- Full Name </label>
+<div >
+<input type="text" placeholder="Full Name" required id="div1">
+</div>
+    <label>- Email </label>
+<div >
+    <input type="email" placeholder="Email" required id="div2">
+    </div>
+            <label>- Phone number </label>
+<div>
+        <input type="tel" placeholder="Phone number" required maxlength="10" minlength="7" id="div3">
+        </div>
+
+        <div id="div4">
+<label>- Gender</label>
+<div id="div7">
+<input type="radio" name="gender" id="male" value="male"> 
+   <label> Male</label>
+
+</div>
+<div id="div8">
+<input type="radio" name="gender" id="female" value="female">
+<label> Female</label>
+</div>
+</div> 
+   <label>  - Arriving Date</label>
+<div >
+    <input type="date" class="date">
+</div>   
+ <label> - Depauture Date</label>
+<div>
+    <input type="date" class="date">
+</div> 
+   <label for="cities">- Where Would u like to travel?</label>
+<div >
+    <select id="cities" name="cities"  aria-placeholder="Choose One">
+<option value=""></option>
+<option value="Jerusalem" > Jerusalem</option>
+<option value="Hebron">Hebron</option>
+<option value="Gaza">Gaza</option>
+<option value="Bait Lahem">Bait Lahem</option>
+<option value="Nablus">Nablus</option>
+
+    </select>
+  </div>   
+   <label>- Passport </label>
+<div >
+    <input type="file" id="div5">
+  </div>
+  <div>
+<label>- Please check services that you need</label>
+
+<div>
+    <input type="checkbox" name="services" >
+
+  <label>Airlin Tickits</label>
+</div> 
+<div>
+  <input type="checkbox" name="services" >
+
+  <label>Rental Car</label>
+
+</div> 
+<div>
+  <input type="checkbox" name="services" >
+
+  <label>Hotel Accomadations</label>
+
+</div> 
+  </div>
+  <div id="div6">
+    <label>- How Will U travel?</label>
+    <div>
+      <input type="radio" name="travel_method" id="by_car" value="by_car">
+      <label for="by_car"> By Car </label>
+    </div>
+    <div id="div10">
+      <input type="radio" name="travel_method" id="by_train" value="by_train">
+      <label for="by_train"> By Train </label>
+    </div>
+    <div id="div11">
+      <input type="radio" name="travel_method" id="by_air" value="by_air">
+      <label for="by_air"> By Air </label>
+    </div>
+  </div>
+  <div id="div13">
+    <input type="submit" value="submit" class="btns">
+        <input type="reset" value="reset" class="btns">
+
+  </div>
+  </form>
+</div>
+    </main>
+</body>
+</html>
