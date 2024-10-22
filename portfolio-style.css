@@ -498,9 +498,11 @@ footer {
     }
 
     .skills {
+        position: relative;
+        left: 55px;
         padding: 0;
         margin-right: 0px;
-        margin-left: 65px;
+        margin-left: 0px;
         margin-top: 150px;
     }
 
