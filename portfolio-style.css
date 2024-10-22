@@ -496,19 +496,24 @@ footer {
     .navbar a {
         font-size: 1.5rem;
     }
-
+    .content{
+        position: relative;
+        left: 13px;
+        flex-direction: column;
+        margin-left: 0px;
+    }
     .skills {
         position: relative;
         left: 55px;
         padding: 0;
         margin-right: 0px;
         margin-left: 0px;
-        margin-top: 150px;
+        margin-top: 250px;
     }
 
     .about {
         position: relative;
-        left: 80px;
+        left: 100px;
         margin-right: 0px;
         margin-left: 0px;
         margin-top: 150px;
@@ -538,11 +543,20 @@ footer {
     .titles {
         margin-left: 25px;
     }
-
-    .about {
-        right: 40px;
+    .skills {
+        position: relative;
         left: 0px;
-        padding: 15px;
+        padding: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 150px;
+    }
+    .about {
+        position: relative;
+        left: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 150px;
     }
 
     .logo{
@@ -599,7 +613,5 @@ footer {
         text-align: center;
     }
 
-    .skills {
-        right: 40px;
-    }
+
 }
