@@ -498,7 +498,7 @@ footer {
     }
     .content{
         position: relative;
-        left: 13px;
+        left: 25px;
         flex-direction: column;
         margin-left: 0px;
     }
@@ -513,7 +513,7 @@ footer {
 
     .about {
         position: relative;
-        left: 100px;
+        left: 120px;
         margin-right: 0px;
         margin-left: 0px;
         margin-top: 150px;
