@@ -29,7 +29,6 @@
         align-items: center;
     }
 
-
 }
 
 @media (max-width:641px) {
@@ -470,7 +469,6 @@ footer {
         position: fixed;
         top: 0px;
         padding: 10px 30px;
-        font-size: 1.6rem;
     }
 
     .skills,
@@ -522,9 +520,11 @@ footer {
 
 @media (max-width:350px) {
     .main {
+        top: -50px;
         display: flex;
         margin-top: 100px;
         margin-left: -5px;
+        
     }
 
     .content {
@@ -543,11 +543,12 @@ footer {
         padding: 15px;
     }
 
-    header {
-        padding: 20px 30px;
-        font-size: 1.3rem;
+    .logo{
+        font-size: 1em;
     }
-
+    #menu-icon{
+        font-size: 35px;
+    }
     .profile-img {
         width: 140%;
         position: absolute;
@@ -575,10 +576,7 @@ footer {
         font-size: 1.1rem;
     }
 
-    .main {
-        top: 0;
-        margin-right: 100px;
-    }
+
 
     .main-btn {
         margin-top: 150px;
