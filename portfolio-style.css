@@ -140,6 +140,7 @@ img {
 }
 
 .icon {
+    z-index: 1024;
     color: var(--primary-color);
     font-size: 4.5rem;
 }
