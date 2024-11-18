@@ -1,411 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@media (max-width:1023px) {
-    header {
-        padding: 12px 20px;
-    }
-
-    .navigation a {
-        padding-left: 10px;
-    }
-
-    .title {
-        font-size: 1.8em;
-    }
-
-    section {
-        padding: 80px 20px;
-    }
-
-    .main-content h2 {
-        font-size: 1em;
-    }
-
-    .main-content h3 {
-        font-size: 1.6em;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
-@media (max-width:641px) {
-    body {
-        font-size: 20px;
-    }
-
-    .main-content h2 {
-        font-size: 0.8em;
-    }
-
-    .main-content h3 {
-        font-size: 1.4em;
-    }
-}
-
-@media (max-width:300px) {
-    body {
-        font-size: 10px;
-
-    }
-}
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
 :root {
-    --main-color: #ff6600;
-}
-body {
-    width: 100%;
-    height: 100%;
+    --primary-color: #ff6600;
 }
 
 * {
-    padding: 0;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
 }
 
 header {
-    background-color: #D3D3D3;
-    width: 100%;
+    font-family: "Faculty Glyphic", sans-serif;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 999;
-    position: fixed;
-    padding: 10px 200px;
+    justify-content: space-around;
+    padding: 1.2% 0;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: #D3D3D3;
 }
 
 .logo {
-    color: var(--main-color);
-    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.3rem;
     font-weight: 600;
-    font-size: 1.2em;
-    font-family: cursive;
-}
-
-header nav a {
-    color: var(--main-color);
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1em;
-    padding-left: 30px;
-}
-
-section {
-
-    padding: 100px 200px;
-    position: relative;
-}
-
-.about h2 {
-    padding-top: 30px;
-    text-align: center;
-}
-
-.about p {
-    text-align: center;
-    font-size: 1.4rem;
-    padding-top: 50px;
-}
-
-.skills {
-    background-color: #ffffff;
-}
-
-.card {
-    background-color: #fff;
-    width: 21.25em;
-    border-radius: 20px;
-    padding: 25px;
-    margin: 15px;
-    box-shadow: 1px 4px 40px rgba(0, 0, 0, 0.4);
-}
-
-.card:hover {
-    scale: 1.05;
-}
-
-.card .icon {
-    text-align: center;
-    font-weight: 700;
-    font-size: 4em;
-    color: var(--main-color);
-
-}
-
-.info {
-    text-align: center;
-}
-
-.info h3 {
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 15px;
-}
-
-video {
-    position: fixed;
-    right: 0%;
-    bottom: 0%;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    backdrop-filter: blur(5px);
-}
-
-.projects-video {
-    position: static;
-    right: 0%;
-    bottom: 0%;
-    width: 100%;
-    height: auto;
-    z-index: -1;
-    border-radius: 15px;
-}
-
-.projects-img {
-    width: 100%;
-    height: auto;
-}
-
-img {
-    border-radius: 15px;
-}
-
-.projects-link {
-    text-decoration: none;
-    color: var(--main-color);
-    font-weight: 500;
-}
-
-.main {
-    display: inline-block;
-}
-
-.profile-img {
-    width: 40%;
-    position: absolute;
-    top: 50px;
-    right: 10px;
-}
-
-.main h2 {
-    color: black;
-    font-weight: 600;
-    font-size: 1.2em;
-
-}
-
-.skills h2 {
-    color: var(--main-color);
-    font-weight: 600;
-    font-size: 1.8em;
-
-}
-
-.main {
-    display: flex;
-    align-items: center;
-    top: 20px;
-    left: -107px;
-}
-
-.main h3 {
-    color: black;
-}
-
-.main span {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: 2em;
-    color: black;
-}
-
-.navbar-a {
-    font-family: cursive;
-    font-size: 1.1rem;
-}
-
-.main-btn {
-    background-color: var(--main-color);
-    color: #fff;
-    border: hidden;
-    border-radius: 15px;
-    text-decoration: none;
-    padding: 15px;
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-    text-align: center;
-    display: inline-block;
-    margin-top: 50px;
-}
-
-
-.social-icons {
-    padding: 110px 0px 0px 0px;
-}
-
-.social-icons a {
-    color: black;
-    padding-right: 30px;
-}
-
-.main div a .fab {
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.titles {
-    display: flex;
-    justify-content: center;
-    color: var(--main-color);
-    margin-bottom: 30px;
-    font-weight: 600;
-    font-size: 2em;
-}
-
-.back-drop {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.35);
-    z-index: 0;
-    /*backdrop-filter: blur(1px);*/
-
-}
-
-.about h2 {
-    color: var(--main-color);
-}
-
-footer {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #menu-icon {
     font-size: 24px;
     cursor: pointer;
-    z-index: 10001;
+    z-index: 1001;
     display: none;
 }
 
 .navbar a {
-    font-size: 1rem;
-    padding: 10px 20px;
-    color: var(--main-color);
+    font-size: 1.2rem;
     font-weight: 500;
+    color: var(--primary-color);
+    padding-left: 20px;
 }
-
 .navbar a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: var(--main-color);
+    background: var(--primary-color);
     position: absolute;
     bottom: -4px;
     left: 0;
     transition: 0.5s;
 }
 
-@media (max-width:991px) {
-    header {
-        padding: 10px 100px;
-    }
+.main-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-    .profile-img {
-        width: 35%;
-    }
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 13px;
+    width: fit-content;
+}
+.btn-primary:hover{
+    font-size:1.3rem ;
+    font-weight: 500;
+    scale: 1.05;
+    transition: 0.2s;
+    color: var(--primary-color);
+    background-color: #D3D3D3;
+}
+.social-icons {
+    position: relative;
+    top: 80px;
+    left: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: black;
+    z-index: -1;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.sections {
+    margin: 10rem 0;
+    text-align: center;
+}
+
+.titles {
+    margin: 3rem 0;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    width: 22rem;
+    height: auto;
+    min-height: 15rem;
+    box-shadow: 1px 4px 40px rgba(0, 0, 0, 0.8);
+}
+
+.card:hover {
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+.icon {
+    color: var(--primary-color);
+    font-size: 4.5rem;
+}
+
+.info {
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.info a {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.info a:hover {
+    color: blue;
+}
+
+video {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
 
 }
 
-@media (max-width:881px) {
-    .profile-img {
-        width: 30%;
-        position: absolute;
-        right: 70px;
-        top: 70px;
-    }
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
 
-    .skills,
-    .about,
-    footer {
-        margin-left: 50px;
-    }
+#about p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 60%;
 
-    .profile-div {
-        width: 80%;
-    }
-
-    header {
-        padding: 10px 100px;
-        position: fixed;
-        top: 0;
-    }
+}
+footer{
+    text-align: center;
 }
 
 @media (max-width:768px) {
-    .profile-img {
-        width: 30%;
-        position: absolute;
-        right: 100px;
-        top: 70px;
-    }
 
-    .profile-div {
-        width: 70%;
-    }
-
-    .skills,
-    .about {
-        padding: 100px 100px;
-    }
-
-    .skills,
-    .about {
-        margin-left: 0px;
-    }
-
-    footer {
-        margin-left: 70px;
-    }
-
-    .social-icons {
-        padding-top: 50px;
-    }
-
-    .content,
-    .about {
-        margin-left: 70px;
-    }
-
-    .titles {
-        margin-left: 70px;
-    }
-
-    header {
-        display: flex;
-        align-items: center;
-    }
 
     header .navbar {
         position: absolute;
@@ -428,194 +209,22 @@ footer {
 
     .navbar a {
         padding: 1rem;
-        border-left: 2px solid var(--main-color);
+        border-left: 2px solid var(--primary-color);
         margin: 1rem;
         display: block;
     }
 
     .navbar a:hover {
         color: #fff;
-        background: var(--main-color);
+        background: var(--primary-color);
         border: none;
     }
 
     .navbar a::after {
         display: none;
     }
-
-
-}
-
-@media (max-width:568px) {
-    .profile-text {
-        font-size: 1rem;
-        width: 250%;
-        margin-top: 500px;
-        margin-left: 0px;
+    .main-div{
+        margin-top: 3rem;
     }
-
-    .profile-img {
-        display: block;
-        width: 100%;
-        padding-top: 0px;
-        padding-left: 245px;
-    }
-
-    .profile-div {
-        width: 100%;
-    }
-
-    #menu-icon {
-        display: initial;
-    }
-
-    header {
-        position: fixed;
-        top: 0px;
-        padding: 10px 30px;
-    }
-
-    .skills,
-    .about {
-        padding: 0;
-        margin-right: 65px;
-        margin-top: 150px;
-    }
-
-    footer {
-        margin-left: 20px;
-    }
-}
-
-@media (max-width:450px) {
-    .main {
-        display: inline-flex;
-        left: -100px;
-    }
-
-    #menu-icon {
-        font-size: 40px;
-    }
-
-    .navbar a {
-        font-size: 1.5rem;
-    }
-    .content{
-        position: relative;
-        left: 25px;
-        flex-direction: column;
-        margin-left: 0px;
-    }
-    .skills {
-        position: relative;
-        left: 75px;
-        padding: 0;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-top: 250px;
-    }
-
-    .about {
-        position: relative;
-        left: 145px;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-top: 150px;
-    }
-
-    footer {
-        margin-left: 140px;
-    }
-
-}
-
-@media (max-width:350px) {
-    .main {
-        top: -50px;
-        display: flex;
-        margin-top: 100px;
-        margin-left: -5px;
-        
-    }
-
-    .content {
-        position: relative;
-        left: 20px;
-        margin-left: 0px;
-    }
-
-    .titles {
-        margin-left: 25px;
-    }
-    .skills {
-        position: relative;
-        left: 0px;
-        padding: 0;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-top: 150px;
-    }
-    .about {
-        position: relative;
-        left: 10px;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-top: 150px;
-    }
-
-    .logo{
-        font-size: 1em;
-    }
-    #menu-icon{
-        font-size: 35px;
-    }
-    .profile-img {
-        width: 140%;
-        position: absolute;
-        top: 50px;
-        right: -38px;
-    }
-
-    .profile-img img {
-        width: 100%;
-    }
-
-    .profile-text {
-        margin-top: 320px;
-        font-size: 0.8rem;
-    }
-
-    .profile-text h2 {
-        width: 150%;
-    }
-
-    .profile-text h3 {
-        position: absolute;
-        right: 0px;
-        width: 200px;
-        font-size: 1.1rem;
-    }
-
-
-
-    .main-btn {
-        margin-top: 150px;
-        position: absolute;
-        right: 20px;
-        width: 200px;
-    }
-
-    .social-icons {
-        margin-top: 220px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 95px;
-    }
-
-    .about p {
-        text-align: center;
-    }
-
 
 }
