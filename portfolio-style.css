@@ -44,6 +44,7 @@ header {
     color: var(--primary-color);
     padding-left: 20px;
 }
+
 .navbar a::after {
     background: var(--primary-color);
     position: absolute;
@@ -64,6 +65,7 @@ header {
     flex-direction: column;
     gap: 20px;
     font-size: 1.2rem;
+    margin-left: 35px;
 }
 
 .btn-primary {
@@ -73,25 +75,24 @@ header {
     border-radius: 13px;
     width: fit-content;
 }
-.btn-primary:hover{
-    font-size:1.3rem ;
+
+.btn-primary:hover {
+    font-size: 1.3rem;
     font-weight: 500;
     scale: 1.05;
     transition: 0.2s;
     color: var(--primary-color);
     background-color: #D3D3D3;
 }
+
 .social-icons {
-    position: relative;
-    top: 80px;
-    left: 10px;
+    margin-left: 5px;
     display: flex;
     gap: 15px;
 }
 
 .social-icons a {
     color: black;
-    z-index: -1;
 }
 
 img {
@@ -183,7 +184,8 @@ video {
     width: 60%;
 
 }
-footer{
+
+footer {
     text-align: center;
 }
 
@@ -225,7 +227,8 @@ footer{
     .navbar a::after {
         display: none;
     }
-    .main-div{
+
+    .main-div {
         margin-top: 3rem;
     }
 
