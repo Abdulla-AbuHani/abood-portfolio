@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
 :root {
     --primary-color: #ff6600;
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Manrope", sans-serif;
     text-decoration: none;
 }
 
@@ -141,8 +141,6 @@ img {
 }
 
 .icon {
-    font-family: sans-serif;
-    z-index: 1024;
     color: var(--primary-color);
     font-size: 4.5rem;
 }
