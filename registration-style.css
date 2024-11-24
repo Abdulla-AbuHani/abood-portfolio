@@ -1,47 +1,44 @@
-/**
-* ! changing default styles of brower
-**/
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: "Quicksand", serif;
 }
 
-body {
-    font-family: sans-serif;
+html {
     background-repeat: no-repeat;
-    background-image: url("https://adminassets.devops.arabiaweather.com/sites/default/files/field/image/arabic-food.jpg");
+    background: url("https://adminassets.devops.arabiaweather.com/sites/default/files/field/image/arabic-food.jpg");
     background-size: cover;
 }
-
+body{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
 .big-container {
     width: 100%;
-    height: 607px;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.7);
+    height: 151vh;
     background-size: cover;
 }
 h1{
-    padding-top: 39px;
+    padding-top: 2.8rem;
     text-align: center;
     color: white;
 }
 .container {
-    width: 77%;
-    height: 387px;
+    width: auto;
+    height: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    margin: 60px 11.5%;
+    margin: 2.9rem 11.5%;
 }
 
-/**
-  * ! style rules for content section
-  **/
 
 .content {
     display: flex;
@@ -49,19 +46,18 @@ h1{
     justify-content: space-around;
     flex-wrap: wrap;
     width: 70%;
-    height: 360px;
-    margin: 15px;
+    height: 23rem;
 }
 .small-img{
-    width: 50%;
-    height: 170px;
-    margin: 5px;
+    display: flex;
+    width: 47%;
+    margin: 0.5rem;
 }
 
 img{
     width:100% ;
-    height:170px ;
-    border-radius: 6px;
+    height:10.5rem ;
+    border-radius: 10px;
 }
 
 .text {
@@ -70,16 +66,10 @@ img{
     font-size: 18px;
 }
 
-/**
-  * ! style rules for form section
-  **/
-
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 45%;
-    /* max-width: 400px; */
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     padding: 50px;
 }
@@ -117,10 +107,6 @@ form div {
 input:focus {
     border: 2px solid #366fe8;
 }
-
-/**
-  * ! style rules for social section
-  **/
 
 .btn {
     display: flex;
@@ -161,10 +147,6 @@ span {
     cursor: pointer;
 }
 
-/**
-  * ! style rules for form icons
-  **/
-
 form div i {
     position: absolute;
     padding: 10px;
@@ -190,10 +172,6 @@ form div i {
     margin-top: 5px;
 }
 
-/**
-  * ! style rules for button 
-  **/
-
 button {
     margin-top: 15px;
     width: 100%;
@@ -211,10 +189,23 @@ button {
 button:hover {
     opacity: 0.8;
 }
+#res-logo {
+    border-radius: 100%;
+    float: left;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 8em;
+    height: 8em;
+}
 
-/**
-  * ! Media Queries are here
-  **/
+#res-logo:hover {
+    animation-name: rollOver;
+    animation-duration: 0.8s;
+    animation-iteration-count: 2;
+}
+
+
 
 @media (max-width: 900px) {
     .container {
@@ -230,32 +221,42 @@ button:hover {
         flex-direction: column;
     }
 
-    .image {
-        height: 70vh;
-    }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     form {
         padding: 20px;
     }
-}
+    .pics{
+        display: none;
+    }
+    .small-img{
+        width: 90%;
+        margin-left: 1rem;
+    }
+    header {
+        text-align: center;
+    }
+    #res-logo{
+        width: 6rem ;
+        height: 6rem;
+        top: 0.2rem;
+        left: 0.2rem;
+    }
+    h1{
+        padding-top: 1rem;
+        font-size: 1.8rem;
+    }
 
-#imgPharoh {
-    border-radius: 100%;
-    width: 200px;
-    float: left;
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    width: 150px;
-    height: 150px;
 }
-
-#imgPharoh:hover {
-    animation-name: rollOver;
-    animation-duration: 0.8s;
-    animation-iteration-count: 2;
+@media (max-width: 400px){
+    #res-logo{
+        width: 4rem;
+        height: 4rem;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
 }
 
 @keyframes rollOver {
@@ -268,8 +269,3 @@ button:hover {
     }
 }
 
-.top-header {
-    position: fixed;
-    width: 100%;
-    height: 80px;
-}
