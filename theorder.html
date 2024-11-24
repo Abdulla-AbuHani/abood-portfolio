@@ -9,16 +9,21 @@
 </head>
 
 <body>
-    <figure>
-        <img id="imgPharoh" src="/animation aqsa.avif" alt="Pharoh The Guide">
-    </figure>
-    <a href="/15++/menu.html" class="home-link"><h2>Al Aqsa Restaurant</h2></a>
+    <header class="top-header">
+        <figure>
+            <img id="imgPharoh" src="/animation aqsa.avif" alt="Pharoh The Guide">
+        </figure>
+        <a href="/menu.html" class="home-link">
+            <h2 class="rest-name">Al Aqsa Restaurant</h2>
+        </a>
+    </header>
+    
     <div class="big-container">
         <div class="order-container">
             <h1>The Order</h1>
             <div class="order-form">
                 <input type="text" id="orderinput" placeholder="add a new Dish">
-                <button onclick="addDish(),submitOrder()" > Add Dish</button>
+                <button onclick="addDish(),submitOrder()"> Add Dish</button>
             </div>
             <ul id="orderlist">
 

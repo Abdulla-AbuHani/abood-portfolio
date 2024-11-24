@@ -5,7 +5,7 @@ const menu = [
     category: "breakfast",
     price: 15.00,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgTIrSe1AQHRSTNSPSmjfGmQS-NGuubNBucg&s",
-    desc: `Eggs with tomatoes, green pepper, and olive oil.`,
+    desc: `Eggs with tomatoes, green pepper, <br>and olive oil.`,
     rating: "★★★☆☆",
   },
   {
@@ -14,7 +14,7 @@ const menu = [
     category: "breakfast",
     price: 5.00,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg32Pf3GNKlXOyUYTJAQmOjef_Rg8HqtGETA&s",
-    desc: `Boiled chickpeas with tahini, olive oil, and green pepper.`,
+    desc: ` chickpeas with tahini, olive oil, and<br> green pepper.`,
     rating: "★★★★☆",
   },
   {
@@ -41,7 +41,7 @@ const menu = [
     category: "lunch",
     price: 50.00,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmSn2pAuiprQzHPoxh-7yaxRZT3ZhdB7KS1w&s",
-    desc: `Chicken with eggplant, potatoes, cauliflower, rice with nuts, and salad. `,
+    desc: `Chicken with eggplant, potatoes, <br>cauliflower, rice with nuts, and salad. `,
     rating: "★★★★★",
   },
   {
@@ -50,7 +50,7 @@ const menu = [
     category: "lunch",
     price: 45.00,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZTPkP9hlxLVoUw7yxsONGbXh0GFydNcxGsg&s",
-    desc: `Chicken with Palestinian spiced rice with nuts and salad.`,
+    desc: `Chicken with Palestinian spiced rice with<br> nuts and salad.`,
     rating: "★★★☆☆",
   },
   {
@@ -59,7 +59,7 @@ const menu = [
     category: "lunch",
     price: 45.00,
     img: "https://i.ytimg.com/vi/1Rtf_uCNCTc/mqdefault.jpg",
-    desc: `Palestinian bread with white rice and chicken with nuts.`,
+    desc: `Palestinian bread with white rice and<br> chicken with nuts.`,
     rating: "★★★★☆",
   },
   {
@@ -68,7 +68,7 @@ const menu = [
     category: "lunch",
     price: 40.00,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4KysJeuSrlTeV2KtilJFlyG-vIu95K1HtjA&s",
-    desc: `Hummus with tahini, minced meat, and bread.`,
+    desc: `Hummus with tahini and green paper,<br> minced meat, and bread.`,
     rating: "★★★★☆",
   }, {
     id: 9,
@@ -76,15 +76,15 @@ const menu = [
     category: "lunch",
     price: 55.00,
     img: "https://img.youm7.com/ArticleImgs/2023/10/18/144157-%D8%A7%D9%84%D9%85%D8%B3%D8%AE%D9%86-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A.jpg",
-    desc: `Chicken with olive oil, onions, sumac, Arabic bread, and nuts.`,
+    desc: `Chicken with olive oil, onions, sumac, <br>Arabic bread, and nuts.`,
     rating: "★★★★★",
   }, {
     id: 10,
     title: "Maftoul  ",
     category: "lunch",
     price: 50.00,
-    img: "https://alwakaai.com/assets/2024-02-07/images/539807_4_1707288380.jpg",
-    desc: `Maftoul with pumpkin, potatoes, carrots, onions, tomatoes, and nuts.`,
+    img: "https://www.assawsana.com/portal/image/imgid457871.jpg",
+    desc: `Maftoul with pumpkin, potatoes, carrots,<br> onions, tomatoes, and nuts.`,
     rating: "★★★★☆",
   },
   {
@@ -93,7 +93,7 @@ const menu = [
     category: "breakfast",
     price: 8.00,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2jhTr-2YAyX5JHoZ5cU1a1vvbSvFcjhtuvw&s",
-    desc: `Grilled eggplant with tahini and green pepper.`,
+    desc: `Grilled eggplant with tahini and <br>green pepper.`,
     rating: "★★★★☆",
   }, {
     id: 12,
@@ -101,7 +101,7 @@ const menu = [
     category: "breakfast",
     price: 5.00,
     img: "https://media.gemini.media/img/Original/2023/4/19/2023_4_19_20_30_47_463.jpg",
-    desc: `Boiled fava beans with green pepper, lemon, and olive oil.`,
+    desc: `fava beans with green pepper, and <br>olive oil.`,
     rating: "★★★★☆",
   }, {
     id: 13,
@@ -109,7 +109,7 @@ const menu = [
     category: "breakfast",
     price: 8.00,
     img: "https://cdnimg.royanews.tv/imageserv/Size728Q100/news/20220613/UEAVF1BMwYWsEHgzdMd08zce5LmzxR0fTBvTf3Av.png",
-    desc: `Chickpeas and fava beans with onions and parsley.`,
+    desc: `Chickpeas and fava beans with parsley.`,
     rating: "★★★★☆",
   }, {
     id: 14,
@@ -117,7 +117,7 @@ const menu = [
     category: "breakfast",
     price: 5.00,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO4r99zSc3H7obussA2XGNDOg_P8siyTj6Xgs0595BUJ5RnaECQQWcxlGVTpxTGLg6RHI&usqp=CAU",
-    desc: `Fried potato slices with any sous you choose.`,
+    desc: `Fried potato slices with any sous <br>you choose.`,
     rating: "★★★★☆",
   },
   {
@@ -203,7 +203,7 @@ const menu = [
     category: "Drinks",
     price: 10.00,
     img: "https://png.pngtree.com/thumb_back/fw800/background/20240418/pngtree-strawberry-milkshake-in-the-glass-jar-on-black-slate-background-image_15664371.jpg",
-    desc: `Milk, natural strawberries, and vanilla ice cream.`,
+    desc: `Milk, natural strawberries, vanilla <br>ice cream, and strawberry ice cream.`,
     rating: "★★★★★",
   },
   {
@@ -211,8 +211,8 @@ const menu = [
     title: "Water",
     category: "Drinks",
     price: 3.00,
-    img: "https://argaamplus.s3.amazonaws.com/02508581-bc92-48ef-8c44-a584d4042833.jpg",
-    desc: `Refreshing coldwater. Tip: ask for a lemon wedge and a mint leaf .`,
+    img: "https://img.freepik.com/premium-photo/minimalist-mineral-water-bottle-with-himalayaninspired-angular-neck-design_38013-40447.jpg",
+    desc: `Refreshing coldwater. Tip: ask for a <br>lemon wedge and a mint leaf .`,
     rating: "☆☆☆☆☆",
   },
   {
@@ -221,7 +221,7 @@ const menu = [
     category: "Drinks",
     price: 10.00,
     img: "https://png.pngtree.com/thumb_back/fw800/background/20240328/pngtree-iced-chocolate-milkshake-drink-image_15645252.jpg",
-    desc: `Milk, chocolate, vanilla ice cream, and chocolate ice cream.`,
+    desc: `Milk, chocolate, vanilla ice cream, and <br> chocolate ice cream.`,
     rating: "☆☆☆☆☆",
   }, {
     id: 27,
@@ -271,8 +271,8 @@ function displayMenuItem(menuItems) {
   }, {});
 
   const displayMenu = Object.keys(categories).map(category => {
-    return `<section id="${category}" class="section">
-      <h2>${category.charAt(0).toUpperCase() + category.slice(1)}</h2>
+    return `<h2>${category.charAt(0).toUpperCase() + category.slice(1)}</h2>
+    <section id="${category}" class="section">
       ${categories[category].map(item => {
       return `<article class="menu-item">
           <img src=${item.img} alt="menu item" class="photo" />
@@ -306,7 +306,7 @@ function displayMenuButtons() {
     acc += `<button type="button" class="filter-btn" data-id=${category}>
       ${category.charAt(0).toUpperCase() + category.slice(1)}
     </button>` ;
-    return acc ;
+    return acc;
   }, '');
 
   btnContainer.innerHTML = categoryBtns;
@@ -320,7 +320,6 @@ function displayMenuButtons() {
   });
 }
 
-// Function to scroll to a specific section
 function scrollToSection(sectionId) {
   if (sectionId === "all") {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -332,121 +331,14 @@ function scrollToSection(sectionId) {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-const sectionCenter = document.querySelector(".section-center");
-const btnContainer = document.querySelector(".btn-container");
-window.addEventListener("DOMContentLoaded", function () {
-  displayMenuItem(menu);
-  displayMenuButtons();
-});
-
-function displayMenuItem(menuItem) {
-  let displayMenu=menuItem.map(function (item){
- return `<article class="menu-item">
- <img src=${item.img} alt="menu item" class="photo" />
- <div class="item-info">
-   <header>
-     <h4>${item.title}</h4>
-     <h4 class="price">${item.price}</h4>
-   </header>
-   <p class="item-text">
-   ${item.desc}
-   </p>
- </div>
-</article>
- `
-  });
-  sectionCenter.innerHTML=displayMenu.join('');
-
-};
-
-
-
-function displayMenuButtons() {
-  const categories = menu.reduce(
-    function (values, item) {
-      if (!values.includes(item.category)) {
-        values.push(item.category);
-      }
-      return values;
-    },
-    ["all"]
-  );
-  const categoryBtns = categories
-    .map(function (category) {
-      return `<button type="button" class="filter-btn" data-id=${category}>
-          ${category}
-        </button>`;
-    })
-    .join("");
-  btnContainer.innerHTML = categoryBtns;
-  const filterBtns = btnContainer.querySelectorAll(".filter-btn");
-  console.log(filterBtns);
-};
-*/
+let menuIcon = document.querySelector('.fa-bars');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('fa-x');
+    btnContainer.classList.toggle('active');
+}
+
+window.onscroll = () => {
+    menuIcon.classList.remove('fa-x');
+    btnContainer.classList.remove('active');
+}
