@@ -1,95 +1,92 @@
-#contaner-div{  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 40px;
     border-radius: 10px;
-    width: 550px;
-    height: 740px;
-    background: linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5));
-    padding-bottom: 20px;
-    margin-left: 410px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
 }
 
-label{
-     margin-left: 25px;
-     margin-top: 5px;    
-     font-family:Segoe UI;
-    }
-h1{
-    padding-top: 20px;
-    text-align: center; 
-    font-family:Segoe UI;
-
-}
-p{
-    text-align: center; 
-    font-family:Segoe UI;
-
+.form-container h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
 }
 
-input{
-    border-radius: 10px;
-    border-color: whitesmoke;
-}
-#div1{
-    width: 500px;
-    height:20px ;
-    margin-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-#div2{
-    width: 500px;
-    height:20px ;
-    margin-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-}
-#div3{
-    width: 500px;
-    height:20px ;
-    margin-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-}
-.date{
-    width: 500px;
-    height:20px ;
-    margin-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-}
-#cities{
-    width: 500px;
-    height:30px ;
-    margin-left: 20px;
-      border-radius: 10px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-
-}
-#div5{
-    width: 500px;
-    height:20px ;
-    margin-left: 20px;
-  border: 1px solid;
-  border-radius: 10px;
-  background-color: whitesmoke;
-  border-color: whitesmoke;
-
+.form-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
 }
 
-#div13{
-    margin-left: 180px;
-
-}
-.btns{
-    width:100px ;
-    height: 30px;
-
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
 }
 
-video{
+.form-container input,
+.form-container select,
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container input[type="radio"],
+.form-container input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.form-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.services, .travel-method {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services label, .travel-method label {
+    width: auto;
+    margin-right: 10px;
+}
+.gender {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+video {
     position: fixed;
     right: 0%;
     bottom: 0%;
@@ -97,4 +94,5 @@ video{
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    filter: blur(2px);
 }
