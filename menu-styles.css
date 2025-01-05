@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: #fff !important;
   line-height: 1.5;
   font-size: 0.875rem;
   font-family: "Quicksand", serif;
@@ -147,8 +148,8 @@ h2 {
 .menu-item {
   border-radius: 20px;
   padding: 0.5rem;
-  background-color: #f9f2ec;
-  box-shadow: 1px 4px 44px rgba(0, 0, 0, 0.9);
+  background-color: #fff;
+  box-shadow: 1px 4px 44px rgba(0, 0, 0, 0.5);
 }
 
 .item-info header {
@@ -174,7 +175,6 @@ h2 {
 
 
 .btn-container::after {
-  background: var(--primary-color);
   position: absolute;
   bottom: -4px;
   left: 0;
