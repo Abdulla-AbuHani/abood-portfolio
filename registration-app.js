@@ -10,17 +10,6 @@ let userName = id("username"),
     Sucess = classes("success-icon");
 
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    validateField(userName, 0, "Username cannot be blank");
-    validateField(PhoneNumber, 1, "Phone Number cannot be blank");
-    validateField(Address, 2, "Address cannot be blank");
-
-    if (allValid()) {
-        window.location.href = "./menu.html"; 
-    }
-});
-
 let validateField = (field, serial, message) => {
     if (field.value.trim() === "") {
         errorMsg[serial].innerHTML = message;
@@ -44,3 +33,13 @@ let allValid = () => {
     return true;
 };
 
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    validateField(userName, 0, "Username cannot be blank");
+    validateField(PhoneNumber, 1, "Phone Number cannot be blank");
+    validateField(Address, 2, "Address cannot be blank");
+
+    if (allValid()) {
+        window.location.href = "./menu.html"; 
+    }
+});
